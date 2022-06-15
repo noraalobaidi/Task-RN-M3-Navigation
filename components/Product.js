@@ -4,7 +4,7 @@ import productStore from '../stores/productStore';
 
 export function Product({ product, onPress }) {
   return (
-    <TouchableOpacity style={styles.card} onPress={onPress}>
+    <TouchableOpacity style={styles.card} onPress={onPress   }>
       <Image style={styles.thumb} source={product.image} />
       <View style={styles.infoContainer}>
         <Text style={styles.name}>{product.name}</Text>

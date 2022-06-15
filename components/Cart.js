@@ -1,8 +1,8 @@
-import React from 'react';
-import { View, Text, Button, FlatList, StyleSheet } from 'react-native';
-import cartStore from '../stores/cartStore';
+import React from "react";
+import { View, Text, Button, FlatList, StyleSheet } from "react-native";
+import cartStore from "../stores/cartStore";
 
-export function Cart() {
+export default function Cart() {
   function Totals() {
     return (
       <View style={styles.cartLineTotal}>
@@ -34,34 +34,34 @@ export function Cart() {
 
 const styles = StyleSheet.create({
   cartLine: {
-    flexDirection: 'row',
+    flexDirection: "row",
   },
   cartLineTotal: {
-    flexDirection: 'row',
-    borderTopColor: '#dddddd',
+    flexDirection: "row",
+    borderTopColor: "#dddddd",
     borderTopWidth: 1,
   },
   lineTotal: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   lineLeft: {
     fontSize: 20,
     lineHeight: 40,
-    color: '#333333',
+    color: "#333333",
   },
   lineRight: {
     flex: 1,
     fontSize: 20,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     lineHeight: 40,
-    color: '#333333',
-    textAlign: 'right',
+    color: "#333333",
+    textAlign: "right",
   },
   itemsList: {
-    backgroundColor: '#eeeeee',
+    backgroundColor: "#eeeeee",
   },
   itemsListContainer: {
-    backgroundColor: '#eeeeee',
+    backgroundColor: "#eeeeee",
     paddingVertical: 8,
     marginHorizontal: 8,
   },
